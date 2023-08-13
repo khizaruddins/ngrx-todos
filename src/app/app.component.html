@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="card">
+    <div class="header">
+      <div class="header-title">
+        <h1>
+          Welcome,
+        </h1>
+        <div class="todos-title">
+          Your todos are listed below
+        </div>
+      </div>
+    </div>
+    <hr class="yellow">
+  </div>
+  <div class="card w-100">
+    <div class="header-title mb-10">
+      Please add your todos here
+    </div>
+    <div class="form">
+      <app-input [config]="todoTitleInputConfig" [control]="getControl('title')" />
+      <app-input [config]="todoDescInputConfig" [control]="getControl('desc')" />
+      <app-button [config]="submitBtnConfig" (onClick)="submitForm()" />
+    </div>
+  </div>
+  <div class="card" *ngIf="isTodoExists">
+    <app-todos-list />
+  </div>
+</div>

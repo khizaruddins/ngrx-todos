@@ -1,0 +1,33 @@
+.todos {
+    .body {
+        display: flex;
+        .numeric {
+            flex-basis: 10%;
+            border: 1px solid #ccc;
+            border-right: none;
+            border-top: none;
+            padding: 10px;
+            text-align: center;
+        }
+        .title {
+            border: 1px solid #ccc;
+            flex-basis: 20%;
+            border-right: none;
+            border-top: none;
+            padding: 10px;
+        }
+        .desc {
+            border: 1px solid #ccc;
+            flex-basis: 40%;
+            padding: 10px;
+            border-top: none;
+        }
+        .action {
+            border: 1px solid #ccc;
+            flex-basis: 20%;
+            padding: 10px;
+            border-top: none;
+            border-left: none;
+        }
+    }
+}

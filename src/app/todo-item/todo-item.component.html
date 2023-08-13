@@ -1,0 +1,10 @@
+<div class="todos">
+    <div class="body">
+        <div class="numeric">{{config.id}}</div>
+        <div class="title">{{config.title}}</div>
+        <div class="desc">{{config.desc}}</div>
+        <div class="action">
+            <app-button [config]="deleteBtnConfig" (onClick)="deleteTodoItem()"></app-button>
+        </div>
+    </div>
+</div>
